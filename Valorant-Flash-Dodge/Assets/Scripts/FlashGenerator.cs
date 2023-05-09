@@ -9,6 +9,7 @@ public class FlashGenerator : MonoBehaviour
     float randomY;
 
     public GameObject flash;
+    public GameObject instantiatedFlash;
 
     private IEnumerator coroutine;
 
@@ -17,7 +18,7 @@ public class FlashGenerator : MonoBehaviour
     {
         float spawnInterval = Random.Range(1.0f, 10.0f);
 
-        coroutine = WaitAndFlash(spawnInterval);
+        coroutine = WaitAndSpawn(spawnInterval);
         StartCoroutine(coroutine);
     }
 
@@ -32,10 +33,10 @@ public class FlashGenerator : MonoBehaviour
         float randomX = Random.Range(-10f, 10f);
         float randomY = Random.Range(2f, 18f);
 
-        Instantiate(flash, new Vector3(randomX, randomY, 20f), Quaternion.identity);
+        instantiatedFlash = Instantiate(flash, new Vector3(randomX, randomY, 20f), Quaternion.identity);
     }
 
-    private IEnumerator WaitAndFlash(float waitTime)
+    private IEnumerator WaitAndSpawn(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
         SpawnFlash();
