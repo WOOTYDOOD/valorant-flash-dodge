@@ -17,7 +17,7 @@ public class Flash : MonoBehaviour
     private bool isInsideView = false;
 
     public bool isFlashed = false;
-    public float flashDuration = 1.1f;
+    public float flashDuration = 1.5f;
     public float flashTimer = 0f;
 
     private void Awake()

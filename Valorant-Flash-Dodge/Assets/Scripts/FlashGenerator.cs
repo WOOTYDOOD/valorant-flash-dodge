@@ -10,35 +10,56 @@ public class FlashGenerator : MonoBehaviour
 
     public GameObject flash;
     public GameObject instantiatedFlash;
+    public KeyCode stopKey = KeyCode.Space;
+    private bool isGenerating = true;
 
-    private IEnumerator coroutine;
+    private IEnumerator spawnFlashes;
+
+    private Rigidbody rb;
+    public float curveForce = 600f;
+    public float initialSpeed = 300f;
 
     // Start is called before the first frame update
     void Start()
     {
-        float spawnInterval = Random.Range(1.0f, 10.0f);
-
-        coroutine = WaitAndSpawn(spawnInterval);
-        StartCoroutine(coroutine);
+        spawnInterval = Random.Range(1.5f, 10.0f);
+        spawnFlashes = WaitAndSpawn(spawnInterval);
+        StartCoroutine(spawnFlashes);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(stopKey))
+        {
+            Debug.Log("Stop Spawning!");
+            isGenerating = false;
+        }
     }
 
     public void SpawnFlash()
     {
         float randomX = Random.Range(-10f, 10f);
         float randomY = Random.Range(2f, 18f);
+        float randomZ = Random.Range(10f, 20f);
 
-        instantiatedFlash = Instantiate(flash, new Vector3(randomX, randomY, 20f), Quaternion.identity);
+        instantiatedFlash = Instantiate(flash, new Vector3(randomX, randomY, randomZ), Quaternion.identity);
+        Curve(instantiatedFlash);
     }
 
     private IEnumerator WaitAndSpawn(float waitTime)
     {
-        yield return new WaitForSeconds(waitTime);
-        SpawnFlash();
+        while (isGenerating)
+        {
+            yield return new WaitForSeconds(waitTime);
+            SpawnFlash();
+        }
+    }
+
+    void Curve(GameObject flashObject)
+    {
+        Rigidbody rb = flashObject.GetComponent<Rigidbody>();
+        rb.velocity = transform.right * initialSpeed;
+        rb.AddForce(-transform.forward * curveForce, ForceMode.Force);
     }
 }
