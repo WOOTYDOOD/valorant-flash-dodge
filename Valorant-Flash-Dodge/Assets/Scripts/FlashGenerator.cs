@@ -41,7 +41,7 @@ public class FlashGenerator : MonoBehaviour
     {
         float randomX = Random.Range(-10f, 10f);
         float randomY = Random.Range(2f, 18f);
-        float randomZ = Random.Range(10f, 20f);
+        float randomZ = Random.Range(20f, 28f);
 
         instantiatedFlash = Instantiate(flash, new Vector3(randomX, randomY, randomZ), Quaternion.identity);
         Curve(instantiatedFlash);

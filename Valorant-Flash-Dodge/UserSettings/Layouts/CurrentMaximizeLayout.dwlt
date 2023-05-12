@@ -56,7 +56,7 @@ MonoBehaviour:
   m_SerializedViewNames: []
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
+  m_ShowGizmos: 1
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 3840, y: 2160}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_suppressRenderingForFullscreen: 0
   m_VSyncEnabled: 0
   m_PlayFocused: 0
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_Stats: 0
   m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
@@ -231,9 +231,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff725f0000
+      m_SelectedIDs: 98e6ffff
+      m_LastClickedID: -6504
+      m_ExpandedIDs: 2cfbffffce5e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -339,9 +339,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 24.8}
+      snapOffset: {x: -320.8, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 0
+      snapCorner: 1
       id: unity-scene-view-toolbar
       index: 0
       layout: 1
@@ -564,9 +564,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.250002, y: 11.084102, z: 11.168213}
+    m_Target: {x: 3.3157086, y: -4.364974, z: 8.919093}
     speed: 2
-    m_Value: {x: 9.250099, y: 6.657458, z: 13.103555}
+    m_Value: {x: 3.3157086, y: -4.364974, z: 8.919093}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -612,13 +612,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.016356071, y: -0.7609904, z: 0.64830655, w: 0.019177414}
+    m_Target: {x: 0.39199004, y: 0.29164085, z: -0.13256581, w: 0.8624208}
     speed: 2
-    m_Value: {x: 0.016355721, y: -0.76097405, z: 0.64829266, w: 0.019177003}
+    m_Value: {x: 0.3919795, y: 0.29163298, z: -0.13256223, w: 0.86239755}
   m_Size:
-    m_Target: 0.4627939
+    m_Target: 8.483493
     speed: 2
-    m_Value: 0.9605373
+    m_Value: 8.483493
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -711,22 +711,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Unity Projects\Valorant-Flash-Dodge\valorant-flash-dodge\Valorant-Flash-Dodge
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 4a610000
-    m_LastClickedID: 24906
-    m_ExpandedIDs: 00000000dc5f000000ca9a3b
+    m_SelectedIDs: 10600000
+    m_LastClickedID: 24592
+    m_ExpandedIDs: 000000000460000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -754,7 +754,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc5f000000ca9a3b
+    m_ExpandedIDs: 000000000460000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -779,9 +779,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 98e6ffff
+    m_LastClickedInstanceID: -6504
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 506.4
-    width: 1171.8
+    width: 1170.2
     height: 277
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
